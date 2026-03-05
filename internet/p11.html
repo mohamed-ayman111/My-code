@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>p11(arthmatic option)</title>
+    <script type="text/javascript">
+        function performOperations() {
+            var num1 = parsefloat(document.getElemenById("number1").value);
+            var num2 = parsefloat(document.getElementById("number2").value);
+            document.getElementById("add").innerHTML = "add:" + (num1 + num2);
+            document.getElementById("sub").innerHTML = "sub:" + (num1 - num2);
+            document.getElementById("mult").innerHTML = "mult" + (num1 * num2);
+            document.getElementById("divi").innrtHTML = "divi" + (num1 / num2);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Arthmatic opration</h1>
+    <form>
+        number1:<input type="number" id="number1"><br> number2:
+        <input type="number" id="number2"><br>
+        <input type="button" value="calculate" onclick="performOperations()">
+    </form>
+    <p id="add"></p>
+    <p id="sub"></p>
+    <p id="mult"></p>
+    <p id="divi"></p>
+</body>
+
+</html>
