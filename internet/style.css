@@ -1,8 +1,12 @@
-body{
+.body{
     background:#2c2c;
     color:#ffffff;
 }
 .inputp3 input{
     border-radius: 15px;
     border:none;
+}
+<!-- p7.html-->
+body{
+    background=red;
 }
