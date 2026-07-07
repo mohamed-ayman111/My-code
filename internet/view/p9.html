@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dialogue</title>
+    <link rel="stylesheet" href="../public/css/p9.css">
+</head>
+<body>
+    <script>
+        function dialogue() {
+            alert("Welcome on javascript.");
+            var result = confirm("Are you want to continue ?");
+            if(result){
+                var name = prompt("Enter your full name :","");
+                var Age = prompt("Enter your age :","");
+                var passnum = prompt("Enter passport id :","");
+                var boold = prompt("Enter boold group :","");
+                if(!name||name.trim() == ""||!Age|| Age.trim() == "" ||!passnum||passnum.trim() == ""|| !boold||boold.trim() == "" ){
+                    alert("All field are required");
+                    return false;
+                }
+                document.getElementById("result").innerHTML = "Welcome , " + name + "!";
+                document.getElementById("Age").innerHTML = "Your age : " + Age + ".";
+                document.getElementById("passnum").innerHTML = "Your passport id : " + passnum + ".";
+                document.getElementById("boold").innerHTML = "Your boold : " + boold + ".";
+                return true;
+            }
+                alert("You click cancal continue.");
+                return true;
+        }
+    </script>
+    <div class="container">
+  <h>Welcom on dialogue</h><br>
+  <button onclick="dialogue()" >Submit</button>
+  <p id="result"></p>
+  <p id="Age"></p>
+  <p id="passnum"></p>
+  <p id="boold"></p>
+  </div> 
+</body>
+</html>
